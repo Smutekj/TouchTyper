@@ -1,10 +1,6 @@
 package Touch.Typer.Typer.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import org.springframework.boot.autoconfigure.AutoConfiguration;
+import jakarta.persistence.*;
 
 @Entity
 public class Word {
