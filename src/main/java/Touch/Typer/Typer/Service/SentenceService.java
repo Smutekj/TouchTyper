@@ -1,20 +1,20 @@
 package Touch.Typer.Typer.Service;
 
-import Touch.Typer.Typer.Model.Word;
-import Touch.Typer.Typer.repo.WordRepo;
+import Touch.Typer.Typer.Model.Sentence;
+import Touch.Typer.Typer.repo.SentenceRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class WordService {
+public class SentenceService {
 
     @Autowired
-    private WordRepo repo;
+    private SentenceRepo repo;
 
 
-    public List<Word> getAllProducts() {
+    public List<Sentence> getAllProducts() {
         return repo.findAll();
     }
 }

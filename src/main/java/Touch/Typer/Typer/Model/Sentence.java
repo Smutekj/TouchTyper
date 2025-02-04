@@ -3,11 +3,11 @@ package Touch.Typer.Typer.Model;
 import jakarta.persistence.*;
 
 @Entity
-public class Word {
+public class Sentence {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String word;
+    private String sentence;
 
     public Integer getId() {
         return id;
@@ -17,19 +17,19 @@ public class Word {
         this.id = id;
     }
 
-    public String getWord() {
-        return word;
+    public String getSentence() {
+        return sentence;
     }
 
-    public void setWord(String word) {
-        this.word = word;
+    public void setSentence(String word) {
+        this.sentence = word;
     }
 
     @Override
     public String toString() {
         return "Word{" +
                 "id=" + id +
-                ", word='" + word + '\'' +
+                ", word='" + sentence + '\'' +
                 '}';
     }
 }
