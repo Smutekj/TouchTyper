@@ -22,6 +22,6 @@ public class UserService {
     }
 
     public boolean getUserByName(String username) {
-        return repo.findByUsername(username);
+        return repo.findByUsername(username).isPresent();
     }
 }
